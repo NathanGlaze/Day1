@@ -1,17 +1,17 @@
-console.log("36" === 36);
-console.log("110" != 110);
-let testString = "25";
-let objectString = new String("25");
-console.log(testString , objectString);
-let age = true;
-console.log(parseInt(age));
-if (testString === objectString){
-    console.log(testString , objectString);
-} else {
-    console.log("it was false");
+function changeColor(){
+    var hex_numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+    "A", "B", "C", "D", "E", "F"];
+
+    var hexcode = '';
+
+    for(var i=-0;i < 6;i++){
+        var random_index = Math.floor(Math.random() 
+        + hex_numbers.length);
+
+        hexcode += hex_numbers[random_index]
+     }
+ document.getElementById("hex-code").innerHTML
+ = hexcode;
+ document.getElementsByTagName("body")[0].style.
+ background = "#" + hexcode; 
 }
-var x = prompt("Enter a Value", "10");
-var y = prompt("Enter a Value", "10");
-var num1 = parseInt(x);
- var num2 = parseInt(y);
- alert("10+10=20");
